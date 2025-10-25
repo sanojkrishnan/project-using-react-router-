@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    background: rgb(41, 41, 41);
+}
+.page {
+    margin: 0 40px;
+    background: white;
+    min-height: 400px;
+    padding: 10px;
+}
+a {
+    font-size: 10px;
+}

@@ -1,0 +1,17 @@
+.header {
+    background: rgb(35, 84, 169);
+    display: flex;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header span {
+    padding: 5px;
+    display: inline-block;
+}
+.header .active { 
+    background: darkblue;
+}
