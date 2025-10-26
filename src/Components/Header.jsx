@@ -7,7 +7,8 @@ function Header() {
     <div className="header">
       <NavLink to="/">
         <span>Home</span>
-      </NavLink>     {/**Link component is used to navigate between routes*/}
+      </NavLink>{" "}
+      {/**Link component is used to navigate between routes*/}
       <NavLink to="settings">
         <span>Settings</span>
       </NavLink>

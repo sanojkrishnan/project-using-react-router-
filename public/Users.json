@@ -1,0 +1,42 @@
+[
+    {
+        "id" : 1,
+        "name" : "John Doe",
+        "class" : "10",
+        "address" : "123 Main St, Anytown, USA",
+        "phone" : "555-1234",
+        "isActive" : true
+    },
+    {
+        "id" : 2,
+        "name" : "sanoj",
+        "class" : "5",
+        "address" : "123 Main St, Anytown, INDIA",
+        "phone" : "545-1234",
+        "isActive" : false
+    },
+    {
+        "id" : 3,
+        "name" : "Kanaran",
+        "class" : "5",
+        "address" : "123 Main St, Anytown, PAKISTAN",
+        "phone" : "555-5965",
+        "isActive" : false
+    },
+    {
+        "id" : 4,
+        "name" : "Lack pie",
+        "class" : "8",
+        "address" : "123 Main St, Anytown, CHINA",
+        "phone" : "555-19854",
+        "isActive" : true
+    },
+    {
+        "id" : 5,
+        "name" : "crore octa",
+        "class" : "7",
+        "address" : "123 Main St, Anytown, SRI LANKA",
+        "phone" : "555-8745",
+        "isActive" : false
+    }
+]

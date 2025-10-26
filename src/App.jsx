@@ -6,6 +6,7 @@ import Settings from "./Pages/Settings";
 import Usage from "./Pages/Usage";
 import Users from "./Pages/Users";
 import NotFound from "./Pages/NotFound";
+import Details from "./Pages/Details";
 import Header from "./Components/Header";
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/usage" element={<Usage />} />
         <Route path="/users" element={<Users />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/details/:id" element={<Details />} /> {/* :id is a variable to pass dynamic data such as user ID */}
       </Routes>
       </div>
     </BrowserRouter>

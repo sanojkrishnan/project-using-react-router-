@@ -12,6 +12,7 @@
     padding: 5px;
     display: inline-block;
 }
-.header .active { 
+.header .active {    /* .active class is a feature of NavLink. it applies when the link is active */
     background: darkblue;
+    border-bottom: white 2px solid;
 }
