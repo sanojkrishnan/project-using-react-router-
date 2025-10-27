@@ -12,3 +12,10 @@
     font-size: 8px;
     color: slategray;
 }
+.options {
+    display: flex;
+    margin-bottom: 5px;
+}
+select {
+    font-size: 8px;
+}
