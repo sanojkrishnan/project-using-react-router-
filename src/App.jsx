@@ -9,7 +9,6 @@ import NotFound from "./Pages/NotFound";
 import Details from "./Pages/Details";
 import Header from "./Components/Header";
 
-
 function App() {
   return (
     <BrowserRouter >  {/* wrapper component for routing. this helps with reading ULs, to store history, and also with navigation */}
@@ -23,7 +22,7 @@ function App() {
         <Route path="/usage" element={<Usage />} />
         <Route path="/users" element={<Users />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/details/:id" element={<Details />} /> {/* :id is a variable to pass dynamic data such as user ID */}
+        <Route path="details/:id/*" element={<Details />} /> {/* :id is a variable to pass dynamic data such as user ID */}
       </Routes>
       </div>
     </BrowserRouter>

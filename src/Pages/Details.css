@@ -32,3 +32,19 @@ button {
     cursor: pointer;
     font-size: 8px;
 }
+.sub-menu {
+    margin: 20px 0;
+}
+.sub-menu a {
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+.sub-menu span {
+    padding: 5px;
+    display: inline-block;
+    background: darkgray;
+}
+.sub-menu .active span {
+    background: rgb(12,48,109);
+}

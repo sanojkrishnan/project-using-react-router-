@@ -1,7 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import {
+  NavLink,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+  useParams,
+} from "react-router-dom";
 import "./Details.css";
 import axios from "axios";
+import Marks from "./Marks";
+import Remarks from "./Remarks";
+import Sports from "./Sports";
 
 function Details() {
   const obj = useParams(); //useParams hook is used to access the dynamic parameters from the URL. here we are accessing the "id" parameter
@@ -44,10 +54,30 @@ function Details() {
         {userData ? userData.class : " "} <br />
         {userData ? userData.phone : " "}
       </div>
+      <div className="sub-menu">
+        <NavLink to={`/details/${urlId}/marks`} >
+          <span>Marks</span>
+        </NavLink>
+        <NavLink to={`/details/${urlId}/sports`}>
+          <span>Sports</span>
+        </NavLink>
+        <NavLink to={`/details/${urlId}/remarks`}>
+          <span>Remarks</span>
+        </NavLink>
+      </div>
+      <div className="details-body">
+        <Routes>
+          <Route path="" element={<Marks />} />
+          <Route path="marks" element={<Marks />} />
+          <Route path="sports" element={<Sports />} />
+          <Route path="remarks" element={<Remarks />} />
+        </Routes>
+      </div>
       <div>
         <button
           onClick={() => {
-            navigate(-1); //-1 means go back to the previous page
+           // navigate(-1); //-1 means go back to the previous page
+            navigate("/users"); //navigating back to the users page 
           }}
         >
           Back
