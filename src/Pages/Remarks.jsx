@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Remarks() {
+function Remarks({data}) {
+  if (!data) return <div>Loading...</div>;
+
   return (
-    <div>Remarks</div>
+    <div>Remarks : {data.remarks}</div>
   )
 }
 

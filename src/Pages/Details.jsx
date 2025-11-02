@@ -36,7 +36,7 @@ function Details() {
   }, [urlId, userData]); //dependencies for the useEffect hook
 
   if (!userData) {
-    return null; //or a loading indicator can be returned here
+    return "loading..."; //rendering loading text if userData is not yet available
   }
 
   return (
@@ -67,10 +67,10 @@ function Details() {
       </div>
       <div className="details-body">
         <Routes>
-          <Route path="" element={<Marks />} />
-          <Route path="marks" element={<Marks />} />
-          <Route path="sports" element={<Sports />} />
-          <Route path="remarks" element={<Remarks />} />
+          <Route index element={<Marks  data={userData}/>} /> {/* index router will print by default */}
+          <Route path="marks" element={<Marks  data={userData}/>} />
+          <Route path="sports" element={<Sports  data={userData}/>} />
+          <Route path="remarks" element={<Remarks  data={userData}/>} />
         </Routes>
       </div>
       <div>
