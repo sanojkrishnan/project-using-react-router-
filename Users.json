@@ -1,0 +1,92 @@
+[
+    {
+        "id" : 1,
+        "name" : "John Doe",
+        "class" : "10",
+        "address" : "123 Main St, Anytown, USA",
+        "phone" : "555-1234",
+        "isActive" : true ,
+        "marks" : {
+            "math" : [95 , 16, 34 , 56, 78],
+            "science" : [15, 16, 25 , 30, 16],
+            "english" : [45, 66, 68, 78, 90]
+            },
+        "sports" : {
+            "highJump" : 1,
+            "longJump" : 1
+        },
+        "remarks" : "Notes didn't submit on time"
+    },
+    {
+        "id" : 2,
+        "name" : "sanoj",
+        "class" : "5",
+        "address" : "123 Main St, Anytown, INDIA",
+        "phone" : "545-1234",
+        "isActive" : false,
+        "marks" : {
+            "math" : [95 , 16, 34 , 56, 78],
+            "science" : [15, 16, 25 , 30, 16],
+            "english" : [45, 66, 68, 78, 90]
+            },
+        "sports" : {
+            "highJump" : 0,
+            "longJump" : -1
+        },
+        "remarks" : "Excellent in everything"
+    },
+    {
+        "id" : 3,
+        "name" : "Kanaran",
+        "class" : "5",
+        "address" : "123 Main St, Anytown, PAKISTAN",
+        "phone" : "555-5965",
+        "isActive" : false,
+        "marks" : {
+            "math" : [95 , 16, 34 , 56, 78],
+            "science" : [15, 16, 25 , 30, 16],
+            "english" : [45, 66, 68, 78, 90]
+            },
+        "sports" : {
+            "highJump" : 0,
+            "longJump" : -1
+        },
+        "remarks" : "Excellent in"
+    },
+    {
+        "id" : 4,
+        "name" : "Lack pie",
+        "class" : "8",
+        "address" : "123 Main St, Anytown, CHINA",
+        "phone" : "555-19854",
+        "isActive" : true,
+        "marks" : {
+            "math" : [95 , 16, 34 , 56, 78],
+            "science" : [15, 16, 25 , 30, 16],
+            "english" : [45, 66, 68, 78, 90]
+            },
+        "sports" : {
+            "highJump" : 1,
+            "longJump" : 1
+        },
+        "remarks" : "Notes didn't submit on time"
+    },
+    {
+        "id" : 5,
+        "name" : "crore octa",
+        "class" : "7",
+        "address" : "123 Main St, Anytown, SRI LANKA",
+        "phone" : "555-8745",
+        "isActive" : false,
+        "marks" : {
+            "math" : [95 , 16, 34 , 56, 78],
+            "science" : [15, 16, 25 , 30, 16],
+            "english" : [45, 66, 68, 78, 90]
+            },
+        "sports" : {
+            "highJump" : 1,
+            "longJump" : 1
+        },
+        "remarks" : "Notes didn't submit on time"
+    }
+]
