@@ -20,7 +20,7 @@ function Users() {
   }
 
   useEffect(() => {
-    axios("Users.json").then((response) => {
+    axios("/project-using-react-router-/Users.json").then((response) => {
       setData(response.data);
     });
   },[]);

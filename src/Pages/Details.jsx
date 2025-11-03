@@ -26,7 +26,7 @@ function Details() {
     //fetching user data if not available in state
     if (!userData) {
       //only fetch if userData is not already available
-      axios("/Users.json").then((response) => {
+      axios("/project-using-react-router-/Users.json").then((response) => {
         //fetching the Users.json file
         console.log("resp", response.data); //logging the response data
         const user = response.data.find((data) => data.id === parseInt(urlId)); //finding the user with the matching id from the response data
