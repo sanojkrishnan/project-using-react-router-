@@ -1,0 +1,11 @@
+{
+    "eshan" : {
+        "role" : ["user"]
+    },
+    "darshan" : {
+        "role" : ["user"]
+    },
+    "krishnan" : {
+        "role" : ["user" , "admin"]
+    }
+}
