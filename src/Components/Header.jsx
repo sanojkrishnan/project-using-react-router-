@@ -9,13 +9,13 @@ function Header() {
         <span>Home</span>
       </NavLink>{" "}
       {/**Link component is used to navigate between routes*/}
-      <NavLink to="settings">
+      <NavLink to="/settings">
         <span>Settings</span>
       </NavLink>
-      <NavLink to="usage">
+      <NavLink to="/usage">
         <span>Usage</span>
       </NavLink>
-      <NavLink to="users">
+      <NavLink to="/users">
         <span>Users</span>
       </NavLink>
     </div>
