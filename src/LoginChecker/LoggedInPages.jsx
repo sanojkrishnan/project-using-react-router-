@@ -25,7 +25,7 @@ const LoggedInPages = () => {
         </div>
         <Routes>
           {/**This component is responsible for rendering the appropriate component based on the current URL */}
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={isLoggedIn() ? <Home /> :<Navigate to="/login" replace />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/usage" element={<Usage />} />
           <Route path="*" element={<NotFound />} />{" "}
