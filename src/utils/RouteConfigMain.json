@@ -1,0 +1,8 @@
+{
+  "/settings": {
+    "roles": ["admin"]
+  },
+  "/users/:urlId/remarks": {
+    "roles": ["admin"]
+  }
+}
