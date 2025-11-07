@@ -1,23 +1,23 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "./Header.css";
+import PrivetLink from "./Links/PrivetLink";
 
 function Header() {
   return (
     <div className="header">
-      <NavLink to="/">
+      <PrivetLink to="/">
         <span>Home</span>
-      </NavLink>{" "}
+      </PrivetLink>{" "}
       {/**Link component is used to navigate between routes*/}
-      <NavLink to="/settings">
+      <PrivetLink to="/settings">
         <span>Settings</span>
-      </NavLink>
-      <NavLink to="/usage">
+      </PrivetLink>
+      <PrivetLink to="/usage">
         <span>Usage</span>
-      </NavLink>
-      <NavLink to="/users">
+      </PrivetLink>
+      <PrivetLink to="/users">
         <span>Users</span>
-      </NavLink>
+      </PrivetLink>
     </div>
   );
 }

@@ -10,10 +10,7 @@ function App() {
       {/* wrapper component for routing. this helps with reading ULs, to store history, and also with navigation */}
       <div className="page">
         <Routes>
-          <Route
-            path="/login"
-            element={ <Login />}
-          />
+          <Route path="/login" element={<Login />} />
           <Route path="/*" element={<LoggedInPages />} />
         </Routes>
       </div>

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import {
-  NavLink,
   Route,
   Routes,
   useLocation,
@@ -12,6 +11,7 @@ import axios from "axios";
 import Marks from "./Marks";
 import Remarks from "./Remarks";
 import Sports from "./Sports";
+import PrivetLink from "../Components/Links/PrivetLink";
 
 function Details() {
   const obj = useParams(); //useParams hook is used to access the dynamic parameters from the URL. here we are accessing the "id" parameter
@@ -55,29 +55,30 @@ function Details() {
         {userData ? userData.phone : " "}
       </div>
       <div className="sub-menu">
-        <NavLink to={`/details/${urlId}/marks`} >
+        <PrivetLink to={`/details/${urlId}/marks`}>
           <span>Marks</span>
-        </NavLink>
-        <NavLink to={`/details/${urlId}/sports`}>
+        </PrivetLink>
+        <PrivetLink to={`/details/${urlId}/sports`}>
           <span>Sports</span>
-        </NavLink>
-        <NavLink to={`/details/${urlId}/remarks`}>
+        </PrivetLink>
+        <PrivetLink to={`/details/${urlId}/remarks`}>
           <span>Remarks</span>
-        </NavLink>
+        </PrivetLink>
       </div>
       <div className="details-body">
         <Routes>
-          <Route index element={<Marks  data={userData}/>} /> {/* index router will print by default */}
-          <Route path="marks" element={<Marks  data={userData}/>} />
-          <Route path="sports" element={<Sports  data={userData}/>} />
-          <Route path="remarks" element={<Remarks  data={userData}/>} />
+          <Route index element={<Marks data={userData} />} />{" "}
+          {/* index router will print by default */}
+          <Route path="marks" element={<Marks data={userData} />} />
+          <Route path="sports" element={<Sports data={userData} />} />
+          <Route path="remarks" element={<Remarks data={userData} />} />
         </Routes>
       </div>
       <div>
         <button
           onClick={() => {
-           // navigate(-1); //-1 means go back to the previous page
-            navigate("/users"); //navigating back to the users page 
+            // navigate(-1); //-1 means go back to the previous page
+            navigate("/users"); //navigating back to the users page
           }}
         >
           Back

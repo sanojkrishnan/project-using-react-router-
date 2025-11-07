@@ -28,12 +28,12 @@ function Login() {
   if (isLoggedIn()) return null;
 
   return (
-    <div>
+    <form>
       <h2>Login</h2>
       <input value={user} onChange={(e) => setUser(e.target.value)} />
       <button onClick={handleOnClick}>Login</button>
       {error && <div style={{ color: "red" }}>{error}</div>}
-    </div>
+    </form>
   );
 }
 

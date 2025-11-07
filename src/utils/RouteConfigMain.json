@@ -2,7 +2,7 @@
   "/settings": {
     "roles": ["admin"]
   },
-  "/users/:urlId/remarks": {
+  "/details/:urlId/remarks": {
     "roles": ["admin"]
   }
 }
